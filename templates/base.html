@@ -1,9 +1,15 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/41245bfce6.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static '/Css/shortnots/header.css' %}" />
     <link rel="stylesheet" href="{% static '/Css/shortnots/footer.css' %}" />
@@ -66,7 +72,7 @@
                   <a
                     href="#"
                     style="color: #fff; text-decoration: none; font-size: 30px"
-                    ><i class="fas fa-cart-plus"></i> 0
+                    ><i class="fas fa-cart-plus"></i> 
                   </a>
                 </li>
               </div>
@@ -78,10 +84,10 @@
       <nav>
         <div class="navbar">
           <ul>
-            <li><a href="./sports_acces.html">Accesories</a></li>
-            <li><a href="./sports_events.html">Events</a></li>
-            <li><a href="./sports_store.html">Store</a></li>
-            <li><a href="./contactus.html">Contact Us</a></li>
+            <li><a href="{% url 'sports_acces' %}">Accesories</a></li>
+            <li><a href="{% url 'sports_events' %}">Events</a></li>
+            <li><a href="{% url 'sports_store'%}">Store</a></li>
+            <li><a href="{% url 'contactus'%}">Contact Us</a></li>
             <li><a href="#">Help</a></li>
           </ul>
           <div class="sign-up">
@@ -92,19 +98,22 @@
             <a href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Login</a>
           {% endif %}  
           </div>
+          </div>
         </div>
+        
       </nav>
+    </header>
 <!-- -------------------------mobile-------------------- -->
 <div class="bottum-mob-nav">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
       <div class="mob-nav">
         <ul>
-          <li><a href="">Accesories</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="./contactus.html">Contact Us</a></li>
-          <li><a href="#">Help</a></li>
+         <li><a href="{% url 'sports_acces' %}">Accesories</a></li>
+            <li><a href="{% url 'sports_events' %}">Events</a></li>
+            <li><a href="{% url 'sports_store'%}">Store</a></li>
+            <li><a href="{% url 'contactus' %"}">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
         </ul>
         <div class="sign-up">
           <a href="#"><i class="fas fa-sign-in-alt"></i> Login</a>

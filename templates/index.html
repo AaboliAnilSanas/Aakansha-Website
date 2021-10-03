@@ -13,7 +13,7 @@
       <div class="container">
         <div class="card">
           <div class="aakanksha_img">
-            <a href="/sports_acces.html"> <img src="{% static '/Images/banner/img-1.jpg' %}" alt=""></a>
+            <a href="{%url 'sports_acces'%}"> <img src="{% static '/Images/banner/img-1.jpg' %}" alt=""></a>
           </div>
           <div class="content">
         <a href="/sports_acces.html"> <h2>Sports Accesories</h2></a>
@@ -23,20 +23,20 @@
         </div>
         <div class="card">
           <div class="aakanksha_img">
-            <a href="/sports_events.html">  <img src="{% static '/Images/banner/img-2.jpg' %}" alt=""> </a>
+            <a href="{%url 'sports_events'%}">  <img src="{% static '/Images/banner/img-2.jpg' %}" alt=""> </a>
           </div>
           <div class="content">
-          <a href="/sports_events.html">  <h2>Sports Events</h2> </a>
+          <a href="{%url 'sports_events'%}">  <h2>Sports Events</h2> </a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nemo vero beatae 
               accusamus blanditiis modi adipisci aliquid eum voluptatem natus.</p>
           </div>
         </div>
         <div class="card">
           <div class="aakanksha_img">
-            <a href="/sports_store.html">  <img src="{% static '/Images/store/shop 1.jpg' %}" alt="">  </a>
+            <a href="{%url 'sports_store'%}">  <img src="{% static '/Images/store/shop 1.jpg' %}" alt="">  </a>
           </div>
           <div class="content">
-            <a href="/sports_store.html"> <h2>Sports Store</h2> </a>
+            <a href="{%url 'sports_store'%}"> <h2>Sports Store</h2> </a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nemo vero beatae 
               accusamus blanditiis modi adipisci aliquid eum voluptatem natus.</p>
           </div>
@@ -74,7 +74,7 @@
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star-half-o"></i>
-                  <h3> <a href="./product.html"> Action Shoes</a></h3>
+                  <h3> <a href="{%url 'product' %}"> Action Shoes</a></h3>
                   <h5>$ 70.00</h5>
               </div>
               </div>

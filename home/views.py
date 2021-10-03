@@ -30,6 +30,30 @@ def login_request(request):
 def logout_request(request):
     logout(request)
     return redirect("index")
+def index(request):
+    return render(request,'index.html')
+def booked(request):
+    return render(request,'booked.html')
+def cart(request):
+    return render(request,'cart.html')
+def contactus(request):
+    return render(request,'contactus.html')
+def filter(request):
+    return render(request,'filter.html')
+def LocalStore(request):
+    return render(request,'LocalStore.html')
+def product(request):
+    return render(request,'product.html')
+def productssfe(request):
+    return render(request,'productssfe.html')
+def sports_acces(request):
+    return render(request,'sports_acces.html')
+def sports_store(request):
+    return render(request,'sports_store.html')
+def sports_events(request):
+    return render(request,'sports_events.html')
+def TicketBooking(request):
+    return render(request,'Ticket Booking.html')
 
 
     
